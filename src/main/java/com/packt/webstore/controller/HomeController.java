@@ -1,15 +1,15 @@
 package com.packt.webstore.controller;
 
-/**
- * Created by jinshengjie on 16/9/23.
- */
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * Created by JINSHENGJIE on 16/11/08 .
+ */
 @Controller
 public class HomeController {
+
     @RequestMapping("/")
     public String welcome(Model model) {
         model.addAttribute("greeting", "Welcome to Web Store!");
